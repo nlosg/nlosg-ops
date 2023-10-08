@@ -48,3 +48,9 @@ variable "branch" {
   type    = string
   default = "main"
 }
+
+variable "oauth_token_id" {
+  type = string
+}
+
+
