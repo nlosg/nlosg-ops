@@ -21,17 +21,17 @@ resource "github_branch_default" "default" {
 
 resource "tfe_workspace" "tfc_workspace" {
   name         = var.tfc_workspace_name
-  organization = var.tfc_org_name
-  project_id   = tfe_project.tfc_project.id
+  organization = data.tfe_organization.tfc_org_name.name
+  project_id   = tfe_project.tfc_project_name.id
 
   vcs_repo {
     identifier     = github_repository.github_repository.full_name
-    oauth_token_id = tfe_oauth_client.gh_auth.oauth_token_id
+    oauth_token_id = tfe_oauth_client.oauth_client.oauth_token_id
     branch         = var.branch
   }
 
   depends_on = [
-    tfe_project.tfc_project,
+    tfe_project.tfc_project_name,
     tfe_oauth_client.gh_auth,
     github_repository.github_repository
   ]
