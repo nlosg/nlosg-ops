@@ -1,7 +1,11 @@
+resource "google_folder" {
+  display_name = var.folder_id
+  parent       = data.google_organization.gcp_org.name
+}
+
 resource "google_project" "wi_project" {
   name       = var.gcp_wi_project
   project_id = var.gcp_wi_project
-  org_id     = var.gcp_org_id
   folder_id  = var.folder_id
 }
 
