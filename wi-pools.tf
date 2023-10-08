@@ -9,5 +9,5 @@ module "wi-pools" {
 	tfc_wi_pool = "nlosg-wi-dev"
 	workload_identity_pool_provider_id = "nlosg-wi-dev"
 	tfc_service_account = "sa-tf-nlosg-dev"
-	
+	github_repository = var.branch
 }
