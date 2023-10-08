@@ -1,4 +1,4 @@
-resource "google_folder" {
+resource "google_folder" "gcp_folder" {
   display_name = var.folder_id
   parent       = data.google_organization.gcp_org.name
 }
