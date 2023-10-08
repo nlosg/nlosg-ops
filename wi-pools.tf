@@ -8,7 +8,7 @@ module "wi-pools" {
 	gcp_org_id = "519726315968"
 	tfc_wi_pool = "nlosg-wi-dev"
 	workload_identity_pool_provider_id = "nlosg-wi-dev"
-	tfc_service_account = "tf-sa-dev"
+	tfc_service_account = "sa-tf-nlosg-dev"
 	
 
 }
