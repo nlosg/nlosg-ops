@@ -12,5 +12,6 @@ module "wi-pools" {
 	github_repository = "nlosg-banking-dev"
 	branch = var.branch
 	oauth_token_id = var.oauth_token_id
+	folder_id = "Development"
 
 }
