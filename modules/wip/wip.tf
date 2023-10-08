@@ -38,7 +38,7 @@ resource "google_iam_workload_identity_pool_provider" "tfc_provider" {
     # Uncomment the line below if you are specifying a custom value for the audience instead of using the default audience.
     # allowed_audiences = [var.tfc_gcp_audience]
   }
-  attribute_condition = "assertion.sub.startsWith(\"organization:${var.tfc_org_name}:project:${data.tfe_organization.tfc_project_name}:workspace:${var.tfc_workspace_name}\")"
+  attribute_condition = "assertion.sub.startsWith(\"organization:${var.tfc_org_name}:project:${data.tfe_organization.tfc_project_name.name}:workspace:${var.tfc_workspace_name}\")"
 
   depends_on = [
     google_iam_workload_identity_pool.tfc_pool
