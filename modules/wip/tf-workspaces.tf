@@ -26,7 +26,7 @@ resource "tfe_workspace" "tfc_workspace" {
 
   vcs_repo {
     identifier     = github_repository.github_repository.full_name
-    oauth_token_id = data.tfe_oauth_client.oauth_client.oauth_token_id
+    oauth_token_id = var.oauth_token_id
     branch         = var.branch
   }
 
