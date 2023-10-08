@@ -20,6 +20,7 @@ resource "github_branch_default" "default" {
   branch     = github_branch.main.branch
 }
 
+
 resource "tfe_workspace" "tfc_workspace" {
   name         = var.tfc_workspace_name
   organization = data.tfe_organization.tfc_org_name.name
@@ -27,7 +28,7 @@ resource "tfe_workspace" "tfc_workspace" {
 
   vcs_repo {
     identifier     = github_repository.github_repository.full_name
-    oauth_token_id = var.oauth_token_id
+    oauth_token_id = var.GITHUB_TOKEN
     branch         = var.branch
   }
 

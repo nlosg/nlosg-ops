@@ -49,14 +49,13 @@ variable "branch" {
   default = "main"
 }
 
-variable "oauth_token_id" {
-  type = string
-  default = ""
-}
-
 variable "folder_id" {
   type = string
   default = ""
 }
 
+variable "GITHUB_TOKEN" {
+  type = string
+  default = ""
+}
 

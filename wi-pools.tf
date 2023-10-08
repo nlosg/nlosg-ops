@@ -11,7 +11,7 @@ module "wi-pools" {
 	tfc_service_account = "sa-tf-nlosg-dev"
 	github_repository = "nlosg-banking-dev"
 	branch = var.branch
-	oauth_token_id = var.oauth_token_id
+	GITHUB_TOKEN = var.GITHUB_TOKEN
 	folder_id = "Development"
 
 }

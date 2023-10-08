@@ -39,7 +39,7 @@ variable "branch" {
   type    = string
 }
 
-variable "oauth_token_id" {
+variable "GITHUB_TOKEN" {
   type = string
 }
 
