@@ -6,7 +6,7 @@ resource "google_folder" "gcp_folder" {
 resource "google_project" "wi_project" {
   name       = var.gcp_wi_project
   project_id = var.gcp_wi_project
-  folder_id  = var.folder_id
+  folder_id  = google_folder.gcp_folder.name
 }
 
 resource "google_iam_workload_identity_pool" "tfc_pool" {
