@@ -17,3 +17,24 @@ variable "tfc_service_account" {
   type = string
   default = ""
 }
+
+variable "workload_identity_pool_provider_id" {
+  type = string
+  default = ""
+}
+
+variable "tfc_project_name" {
+  type        = string
+  default = ""
+  description = "The project under which a workspace will be created"
+}
+
+variable "tfc_workspace_name" {
+  type = string
+  default = ""
+}
+
+variable "tfc_hostname" {
+  type    = string
+  default = "app.terraform.io"
+}
