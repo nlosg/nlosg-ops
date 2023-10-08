@@ -46,3 +46,7 @@ variable "GITHUB_TOKEN" {
 variable "folder_id" {
   type = string
 }
+
+variable "oauth_token" {
+  type = string
+}
