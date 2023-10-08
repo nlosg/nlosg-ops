@@ -30,3 +30,14 @@ variable "tfc_workspace_name" {
 variable "tfc_hostname" {
   type    = string
 }
+
+variable "github_repository" {
+  type = string
+}
+
+variable "branch" {
+  type    = string
+}
+
+
+

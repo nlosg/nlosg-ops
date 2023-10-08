@@ -10,5 +10,4 @@ module "wi-pools" {
 	workload_identity_pool_provider_id = "nlosg-wi-dev"
 	tfc_service_account = "sa-tf-nlosg-dev"
 	
-
 }

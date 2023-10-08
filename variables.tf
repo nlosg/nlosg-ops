@@ -38,3 +38,13 @@ variable "tfc_hostname" {
   type    = string
   default = "app.terraform.io"
 }
+
+variable "github_repository" {
+  type = string
+  default = ""
+}
+
+variable "branch" {
+  type    = string
+  default = "main"
+}
