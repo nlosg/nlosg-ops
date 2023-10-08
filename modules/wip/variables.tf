@@ -43,3 +43,6 @@ variable "oauth_token_id" {
   type = string
 }
 
+variable "folder_id" {
+  type = string
+}

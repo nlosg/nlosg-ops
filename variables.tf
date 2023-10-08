@@ -54,4 +54,9 @@ variable "oauth_token_id" {
   default = ""
 }
 
+variable "folder_id" {
+  type = string
+  default = ""
+}
+
 
