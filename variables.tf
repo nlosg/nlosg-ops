@@ -62,3 +62,4 @@ variable "GITHUB_TOKEN" {
 variable "oauth_token" {
   type = string
   default = ""
+}
