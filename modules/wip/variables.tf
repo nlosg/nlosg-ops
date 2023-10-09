@@ -55,7 +55,8 @@ variable "gcp_service_list" {
     "iam.googleapis.com",
     "cloudresourcemanager.googleapis.com",
     "sts.googleapis.com",
-    "iamcredentials.googleapis.com"
+    "iamcredentials.googleapis.com",
+    "serviceusage.googleapis.com"
   ]
 }
 
