@@ -28,7 +28,7 @@ resource "tfe_workspace" "tfc_workspace" {
 
   vcs_repo {
     identifier     = github_repository.github_repository.full_name
-    oauth_token_id = "ot-2kfrKvgYWuRZtS7N"
+    oauth_token_id = data.tfe_oauth_client.client.aouth_token_id
   }
 
   depends_on = [

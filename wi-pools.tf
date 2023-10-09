@@ -1,4 +1,4 @@
-module "wi-pools" {
+/*module "wi-pools" {
 	source = "./modules/wip"
 
 	tfc_hostname = var.tfc_hostname
@@ -15,4 +15,4 @@ module "wi-pools" {
 	folder_id = "Development"
 	#OAUTH_TOKEN = var.OAUTH_TOKEN
 
-}
+}*/
