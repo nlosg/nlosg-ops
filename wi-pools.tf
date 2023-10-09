@@ -12,7 +12,7 @@ module "wi-pool-xyz" {
 	branch = var.branch
 	GITHUB_TOKEN = var.GITHUB_TOKEN
 	folder_id = "Developmentxyz"
-	gcp_org_id = var.gcp_org_id
+	gcp_org_id = "519726315968"
 }
 
 module "wi-pool-abc" {
@@ -29,5 +29,5 @@ module "wi-pool-abc" {
 	branch = var.branch
 	GITHUB_TOKEN = var.GITHUB_TOKEN
 	folder_id = "Developmentabc"
-	gcp_org_id = var.gcp_org_id
+	gcp_org_id = "519726315968"
 }
