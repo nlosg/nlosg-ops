@@ -12,5 +12,5 @@ module "wi-pool-xyz" {
 	github_repository = "nlosg-xyz"
 	branch = var.branch
 	GITHUB_TOKEN = var.GITHUB_TOKEN
-	folder_id = "nlosgg dev"
+	# folder_id = "nlosgg dev"
 }

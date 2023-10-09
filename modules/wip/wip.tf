@@ -1,16 +1,11 @@
-resource "google_folder" "gcp_folder" {
+/*resource "google_folder" "gcp_folder" {
   display_name = var.folder_id
   parent       = data.google_organization.gcp_org.name
-}
+}*/
 
 resource "google_project" "wi_project" {
   name       = var.gcp_wi_project
   project_id = var.gcp_wi_project
-  folder_id  = google_folder.gcp_folder.name
-
-  depends_on = [
-    google_folder.gcp_folder
-  ]
 }
 
 resource "google_iam_workload_identity_pool" "tfc_pool" {

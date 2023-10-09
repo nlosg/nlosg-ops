@@ -49,10 +49,10 @@ variable "branch" {
   default = "main"
 }
 
-variable "folder_id" {
+/*variable "folder_id" {
   type = string
   default = ""
-}
+}*/
 
 variable "GITHUB_TOKEN" {
   type = string
