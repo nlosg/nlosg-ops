@@ -59,6 +59,16 @@ variable "GITHUB_TOKEN" {
   default = ""
 }
 
+variable "sa_project" {
+  type    = string
+  default = ""
+}
+
+variable "prj_service_account" {
+  type    = string
+  default = ""
+}
+
 /*variable "OAUTH_TOKEN" {
   type = string
   default = ""
