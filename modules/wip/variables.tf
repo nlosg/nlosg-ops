@@ -1,5 +1,5 @@
 variable "gcp_wi_project" {
-	type = string
+  type = string
 }
 
 variable "gcp_org_id" {
@@ -29,7 +29,7 @@ variable "tfc_workspace_name" {
 }
 
 variable "tfc_hostname" {
-  type    = string
+  type = string
 }
 
 variable "github_repository" {
@@ -37,7 +37,7 @@ variable "github_repository" {
 }
 
 variable "branch" {
-  type    = string
+  type = string
 }
 
 variable "GITHUB_TOKEN" {

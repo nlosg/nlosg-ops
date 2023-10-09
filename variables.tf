@@ -1,36 +1,36 @@
 variable "gcp_wi_project" {
-	type = string
+  type    = string
   default = ""
 }
 
 variable "gcp_org_id" {
-  type = string
+  type    = string
   default = ""
 }
 
 variable "tfc_wi_pool" {
-  type = string
+  type    = string
   default = ""
 }
 
 variable "tfc_service_account" {
-  type = string
+  type    = string
   default = ""
 }
 
 variable "workload_identity_pool_provider_id" {
-  type = string
+  type    = string
   default = ""
 }
 
 variable "tfc_project_name" {
   type        = string
-  default = ""
+  default     = ""
   description = "The project under which a workspace will be created"
 }
 
 variable "tfc_workspace_name" {
-  type = string
+  type    = string
   default = ""
 }
 
@@ -40,7 +40,7 @@ variable "tfc_hostname" {
 }
 
 variable "github_repository" {
-  type = string
+  type    = string
   default = ""
 }
 
@@ -55,7 +55,7 @@ variable "branch" {
 }*/
 
 variable "GITHUB_TOKEN" {
-  type = string
+  type    = string
   default = ""
 }
 
