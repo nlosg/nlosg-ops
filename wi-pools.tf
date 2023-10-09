@@ -1,4 +1,4 @@
-module "wi-pools" {
+module "wi-pool-xyz" {
 	source = "./modules/wip"
 
 	tfc_hostname = var.tfc_hostname
@@ -14,7 +14,7 @@ module "wi-pools" {
 	folder_id = "Developmentxyz"
 }
 
-module "wi-pools" {
+module "wi-pool-abc" {
 	source = "./modules/wip"
 
 	tfc_hostname = var.tfc_hostname
