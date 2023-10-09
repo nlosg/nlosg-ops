@@ -1,7 +1,3 @@
-variable "gcp_org_id" {
-  type = string
-}
-
 variable "gcp_wi_project" {
 	type = string
 }
