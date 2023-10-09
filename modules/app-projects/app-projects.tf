@@ -6,7 +6,9 @@ resource "google_project" "app_project" {
 }
 
 resource "google_project_iam_member" "app_project_member" {
+  for_each                   = toset(var.app_sa_role_list)
   project = google_project.app_project.id
-  role    = "roles/editor"
+  role    = each.value
   member  = var.service_account
 }
+
