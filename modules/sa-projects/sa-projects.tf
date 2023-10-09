@@ -11,7 +11,7 @@ resource "google_service_account" "projects_sa" {
   project      = var.sa_project
 
   depends_on = [
-    module.wip.
+    module.wip
   ]
 }
 
