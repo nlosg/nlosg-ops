@@ -74,6 +74,16 @@ variable "principal" {
   default = ""
 }
 
+variable "app_project" {
+  type    = string
+  default = ""
+}
+
+variable "service_account" {
+  type    = string
+  default = ""
+}
+
 /*variable "OAUTH_TOKEN" {
   type = string
   default = ""
