@@ -9,10 +9,6 @@ resource "google_service_account" "projects_sa" {
   account_id   = var.prj_service_account
   display_name = "Project Service Account"
   project      = var.sa_project
-
-  depends_on = [
-    module.wip
-  ]
 }
 
 resource "google_service_account_iam_member" "projects_sa_member" {
