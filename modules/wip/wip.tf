@@ -1,6 +1,6 @@
 resource "google_folder" "gcp_folder" {
   display_name = var.folder_id
-  parent       = data.google_organization.gcp_org.name
+  parent       = data.google_organization.gcp_org.org_id
 
   depends_on = [
     data.google_organization.gcp_org
