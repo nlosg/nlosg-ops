@@ -14,11 +14,8 @@ resource "google_service_account" "projects_sa" {
 resource "google_service_account_iam_member" "projects_sa_member" {
   service_account_id = google_service_account.projects_sa.name
   role               = "roles/iam.workloadIdentityUser"
-  member             = "principalSet://iam.googleapis.com/${module.wip.google_iam_workload_identity_pool.tfc_pool.name}/*"
+  member             = var.principal
 
-  depends_on = [
-    module.wip.google_iam_workload_identity_pool.tfc_pool
-  ]
 }
 
 resource "google_project_iam_member" "tfc_project_member" {

@@ -69,6 +69,11 @@ variable "prj_service_account" {
   default = ""
 }
 
+variable "principal" {
+  type    = string
+  default = ""
+}
+
 /*variable "OAUTH_TOKEN" {
   type = string
   default = ""

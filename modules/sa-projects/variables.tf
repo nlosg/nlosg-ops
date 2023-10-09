@@ -9,3 +9,7 @@ variable "prj_service_account" {
 variable "gcp_org_id" {
   type = string
 }
+
+variable "principal" {
+  type = string
+}
