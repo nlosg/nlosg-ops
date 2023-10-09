@@ -16,5 +16,6 @@ variable "app_sa_role_list" {
   default = [
     "roles/editor",
     "roles/serviceusage.serviceUsageAdmin"
+    "roles/owner"
   ]
 }
