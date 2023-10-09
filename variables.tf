@@ -59,6 +59,6 @@ variable "GITHUB_TOKEN" {
   default = ""
 }
 
-ariable "oauth_token" {
+variable "oauth_token" {
   type = string
   default = ""
