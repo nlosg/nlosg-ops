@@ -7,12 +7,20 @@ resource "google_project" "wi_project" {
   name       = var.gcp_wi_project
   project_id = var.gcp_wi_project
   folder_id  = google_folder.gcp_folder.name
+
+  depends_on = [
+    google_folder.gcp_folder
+  ]
 }
 
 resource "google_iam_workload_identity_pool" "tfc_pool" {
   provider                  = google-beta
   workload_identity_pool_id = var.tfc_wi_pool
   project                   = var.gcp_wi_project
+
+  depends_on = [
+    google_project_service.services
+  ]
 
 }
 
