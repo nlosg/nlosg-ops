@@ -1,7 +1,6 @@
 resource "google_folder" "gcp_folder" {
   display_name = var.folder_id
   parent       = data.google_organization.gcp_org.name
-
 }
 
 resource "google_project" "wi_project" {
@@ -14,10 +13,6 @@ resource "google_iam_workload_identity_pool" "tfc_pool" {
   provider                  = google-beta
   workload_identity_pool_id = var.tfc_wi_pool
   project                   = var.gcp_wi_project
-
-  depends_on = [
-    google_project_service.services
-  ]
 
 }
 
