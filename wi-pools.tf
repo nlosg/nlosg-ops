@@ -12,7 +12,7 @@ module "wi-pool-xyz" {
 	github_repository = "nlosg-xyz"
 	branch = var.branch
 	GITHUB_TOKEN = var.GITHUB_TOKEN
-	folder_id = "Developmentxyz"
+	folder_id = "nlosgg dev"
 }
 
 module "wi-pool-abc" {
@@ -29,5 +29,5 @@ module "wi-pool-abc" {
 	github_repository = "nlosg-abc"
 	branch = var.branch
 	GITHUB_TOKEN = var.GITHUB_TOKEN
-	folder_id = "Developmentabc"
+	folder_id = "nlosgg uat"
 }
