@@ -65,7 +65,7 @@ variable "tf_role_list" {
   type        = list(string)
   default = [
     "roles/editor",
-    "roles/serviceusage.services.list"
+    roles/serviceusage.serviceUsageAdmin
   ]
 }
 
