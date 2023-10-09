@@ -3,7 +3,7 @@ resource "google_folder" "gcp_folder" {
   parent       = data.google_organization.gcp_org.name
 
   depends_on = [
-    data.google_organization.gcp_org.name
+    data.google_organization.gcp_org
   ]
 
 }
