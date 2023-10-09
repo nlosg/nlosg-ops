@@ -13,6 +13,6 @@ module "wi-pools" {
 	branch = var.branch
 	GITHUB_TOKEN = var.GITHUB_TOKEN
 	folder_id = "Development"
-	OAUTH_TOKEN = var.OAUTH_TOKEN
+	#OAUTH_TOKEN = var.OAUTH_TOKEN
 
 }

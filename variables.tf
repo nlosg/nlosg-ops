@@ -59,7 +59,7 @@ variable "GITHUB_TOKEN" {
   default = ""
 }
 
-variable "OAUTH_TOKEN" {
+/*variable "OAUTH_TOKEN" {
   type = string
   default = ""
-}
+}*/

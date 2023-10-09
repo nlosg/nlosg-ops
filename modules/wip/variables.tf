@@ -47,6 +47,6 @@ variable "folder_id" {
   type = string
 }
 
-variable "OAUTH_TOKEN" {
+/*variable "OAUTH_TOKEN" {
   type = string
-}
+}*/
