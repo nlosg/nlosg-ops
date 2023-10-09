@@ -1,4 +1,4 @@
-module "wi-pool-xyz" {
+/*module "wi-pool-xyz" {
 	source = "./modules/wip"
 
 	tfc_hostname = var.tfc_hostname
@@ -28,4 +28,4 @@ module "wi-pool-abc" {
 	branch = var.branch
 	GITHUB_TOKEN = var.GITHUB_TOKEN
 	folder_id = "Developmentabc"
-}
+}*/
