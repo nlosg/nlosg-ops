@@ -44,9 +44,9 @@ variable "GITHUB_TOKEN" {
   type = string
 }
 
-variable "folder_id" {
+/*variable "folder_id" {
   type = string
-}
+}*/
 
 variable "gcp_service_list" {
   description = "APIs required for the project"
