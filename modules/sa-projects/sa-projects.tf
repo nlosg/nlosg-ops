@@ -19,7 +19,8 @@ resource "google_service_account_iam_member" "projects_sa_member" {
 }
 
 resource "google_project_iam_member" "tfc_project_member" {
+  for_each                   = toset(var.sa_role_list)
   project = google_project.sa_project.id
-  role    = "roles/editor"
+  role    = each.value
   member  = "serviceAccount:${google_service_account.projects_sa.email}"
 }

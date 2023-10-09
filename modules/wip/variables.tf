@@ -60,6 +60,15 @@ variable "gcp_service_list" {
   ]
 }
 
+variable "tf_role_list" {
+  description = "Roles required for the TF SA"
+  type        = list(string)
+  default = [
+    "roles/editor",
+    "roles/serviceusage.services.list"
+  ]
+}
+
 /*variable "OAUTH_TOKEN" {
   type = string
 }*/

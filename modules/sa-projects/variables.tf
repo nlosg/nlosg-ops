@@ -13,3 +13,12 @@ variable "gcp_org_id" {
 variable "principal" {
   type = string
 }
+
+variable "sa_role_list" {
+  description = "Roles required for the TF SA"
+  type        = list(string)
+  default = [
+    "roles/editor",
+    "roles/serviceusage.services.list"
+  ]
+}
