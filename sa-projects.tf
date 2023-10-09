@@ -4,5 +4,5 @@ module "sa-xyz" {
   sa_project          = "nlosg-xyz-dev"
   prj_service_account = "nlosg-xyz-dev"
   gcp_org_id          = "519726315968"
-  principal           = "principalSet://iam.googleapis.com/${module.wi-pool-xyz.google_iam_workload_identity_pool.tfc_pool.name}/*"
+  principal           = "principalSet://iam.googleapis.com/${module.wi-pool-xyz.wi_pool_name}/*"
 }
