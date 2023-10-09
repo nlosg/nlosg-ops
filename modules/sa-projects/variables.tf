@@ -19,6 +19,6 @@ variable "sa_role_list" {
   type        = list(string)
   default = [
     "roles/editor",
-    roles/serviceusage.serviceUsageAdmin
+    "roles/serviceusage.serviceUsageAdmin"
   ]
 }
