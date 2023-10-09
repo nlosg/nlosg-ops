@@ -29,7 +29,6 @@ resource "tfe_workspace" "tfc_workspace" {
   vcs_repo {
     identifier     = github_repository.github_repository.full_name
     oauth_token_id = var.OAUTH_TOKEN
-    branch         = var.branch
   }
 
   depends_on = [
