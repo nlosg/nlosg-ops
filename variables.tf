@@ -1,6 +1,6 @@
 variable "gcp_org_id" {
   type = string
-  default = data.google_organization.gcp_org.name
+  default = "519726315968"
 }
 
 variable "gcp_wi_project" {
