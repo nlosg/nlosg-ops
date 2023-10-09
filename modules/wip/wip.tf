@@ -19,6 +19,10 @@ resource "google_iam_workload_identity_pool" "tfc_pool" {
   workload_identity_pool_id = var.tfc_wi_pool
   project                   = var.gcp_wi_project
 
+  depends_on = [
+    google_project_service.services
+  ]
+
 }
 
 resource "google_iam_workload_identity_pool_provider" "tfc_provider" {
@@ -61,7 +65,7 @@ resource "google_service_account" "tfc_service_account" {
   project      = var.gcp_wi_project
 
   depends_on = [
-    google_project.wi_project
+    google_project_service.services
   ]
 }
 

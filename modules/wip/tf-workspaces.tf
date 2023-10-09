@@ -1,7 +1,3 @@
-# Connecting TF workspace with Github
-
-
-
 resource "github_repository" "github_repository" {
   name        = var.github_repository
   description = ""
