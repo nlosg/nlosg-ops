@@ -2,10 +2,6 @@ variable "gcp_wi_project" {
 	type = string
 }
 
-variable "gcp_org_id" {
-  type = string
-}
-
 variable "tfc_wi_pool" {
   type = string
 }
