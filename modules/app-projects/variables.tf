@@ -5,3 +5,7 @@ variable "app_project" {
 variable "service_account" {
 	type = string
 }
+
+variable "gcp_org_id" {
+	type = string
+}
