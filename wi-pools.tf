@@ -1,4 +1,4 @@
-module "wi-pool-xyz" {
+/*module "wi-pool-xyz" {
   source = "./modules/wip"
 
   tfc_hostname                       = var.tfc_hostname
@@ -13,7 +13,7 @@ module "wi-pool-xyz" {
   branch                             = var.branch
   GITHUB_TOKEN                       = var.GITHUB_TOKEN
   # folder_id = "nlosgg dev"
-}
+}*/
 
 module "wi-pool-abc" {
   source = "./modules/wip"
