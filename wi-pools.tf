@@ -15,19 +15,19 @@
   # folder_id = "nlosgg dev"
 }*/
 
-module "wi-pool-abc" {
+/*module "wi-pool-prd" {
   source = "./modules/wip"
 
   tfc_hostname                       = var.tfc_hostname
-  tfc_project_name                   = "nlosg-abc"
-  tfc_workspace_name                 = "nlosg-abc"
-  gcp_wi_project                     = "nlosg-wi-abc"
+  tfc_project_name                   = "nlosg-products"
+  tfc_workspace_name                 = "nlosg-products"
+  gcp_wi_project                     = "nlosg-wi-products"
   gcp_org_id                         = "519726315968"
-  tfc_wi_pool                        = "nlosg-wi-abc"
-  workload_identity_pool_provider_id = "nlosg-wi-abc"
-  tfc_service_account                = "sa-tf-nlosg-abc"
-  github_repository                  = "nlosg-abc"
+  tfc_wi_pool                        = "nlosg-wi-products"
+  workload_identity_pool_provider_id = "nlosg-wi-products"
+  tfc_service_account                = "sa-tf-nlosg-products"
+  github_repository                  = "nlosg-products"
   branch                             = var.branch
   GITHUB_TOKEN                       = var.GITHUB_TOKEN
   # folder_id = "nlosgg dev"
-}
+}*/
